@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+<h1 id="title">Developer Learning Survey</h1>
+<p id="description">Help us understand your learning journey and preferences as a developer. Your feedback will help improve learning resources and tools.</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Full Name</label>
+  <input
+    required
+    id="name"
+    type="text"
+    placeholder="Enter your full name">
+
+  <br>
+
+  <label for="email" id="email-label">Email Address</label>
+  <input
+    required
+    id="email"
+    type="email"
+    placeholder="Enter your email">
+
+  <br>
+
+  <label for="number" id="number-label">Age</label>
+  <input
+    id="number"
+    type="number"
+    min="10" max="100"
+    placeholder="Enter your age">
+
+  <br><br>
+
+  <label for="dropdown">What is your current skill level?</label>
+  <br><br>
+  <select id="dropdown">
+    <option selected disabled>Select current level</option>
+    <option>Beginner</option>
+    <option>Intermediate</option>
+    <option>Advanced</option>
+  </select>
+
+  <br><br>
+
+  What is your primary learning goal?
+  <br><br>
+  <input id="web-developer" type="radio" name="goal" value="yes">
+  <label for="web-developer">Become a web developer</label>
+  <br>
+  <input id="improve-coding" type="radio" name="goal" value="yes">
+  <label for="improve-coding">Improve coding skills</label>
+
+  <br><br>
+
+  Which technologies are you learning?
+  <br><br>
+  <input id="html" type="checkbox" name="choice" value="html">
+  <label for="html">HTML</label>
+  <br>
+  <input id="css" type="checkbox" name="choice" value="css">
+  <label for="css">CSS</label>
+  <br>
+  <input id="javascript" type="checkbox" name="choice" value="javascript">
+  <label for="javascript">JavaScript</label>
+
+  <br><br>
+
+  <label for="comments">Additional Comments?</label>
+  <br><br>
+  <textarea name="comments" id="comments"></textarea>
+
+  <br><br>
+
+  <button id="submit" type="submit">Submit</button>
+</form>
+</body>
+</html>
